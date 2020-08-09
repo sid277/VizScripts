@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="25735" started-at="2020-08-08T19:08:42 IST" finished-at="2020-08-08T19:09:08 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="25735" started-at="2020-08-08T19:08:42 IST" finished-at="2020-08-08T19:09:08 IST">
+      <class name="VizTest.FirstTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:VizTest.FirstTest@4f51b3e0]" name="openBrowser" is-config="true" duration-ms="11841" started-at="2020-08-08T19:08:42 IST" finished-at="2020-08-08T19:08:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="checkUrl()[pri:0, instance:VizTest.FirstTest@4f51b3e0]" name="checkUrl" duration-ms="40" started-at="2020-08-08T19:08:54 IST" finished-at="2020-08-08T19:08:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUrl -->
+        <test-method status="PASS" signature="clickLoginButton()[pri:1, instance:VizTest.FirstTest@4f51b3e0]" name="clickLoginButton" duration-ms="5219" started-at="2020-08-08T19:08:54 IST" finished-at="2020-08-08T19:08:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickLoginButton -->
+        <test-method status="PASS" signature="clientLogin()[pri:2, instance:VizTest.FirstTest@4f51b3e0]" name="clientLogin" duration-ms="1401" started-at="2020-08-08T19:08:59 IST" finished-at="2020-08-08T19:09:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clientLogin -->
+        <test-method status="PASS" signature="clickViz()[pri:3, instance:VizTest.FirstTest@4f51b3e0]" name="clickViz" duration-ms="296" started-at="2020-08-08T19:09:01 IST" finished-at="2020-08-08T19:09:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickViz -->
+        <test-method status="PASS" signature="profileUser()[pri:4, instance:VizTest.FirstTest@4f51b3e0]" name="profileUser" duration-ms="787" started-at="2020-08-08T19:09:01 IST" finished-at="2020-08-08T19:09:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profileUser -->
+        <test-method status="PASS" signature="editUser()[pri:5, instance:VizTest.FirstTest@4f51b3e0]" name="editUser" duration-ms="6098" started-at="2020-08-08T19:09:02 IST" finished-at="2020-08-08T19:09:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editUser -->
+      </class> <!-- VizTest.FirstTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
