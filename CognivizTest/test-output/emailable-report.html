@@ -8,16 +8,77 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">25,735</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">firefoxTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">41,025</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">chromeTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">29,074</td><td></td><td></td></tr>
+<tr><td><a href="#t2">ieTest</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">309,429</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">operaTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">9,419</td><td></td><td></td></tr>
+<tr><td><a href="#t4">edgeTest</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">56</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num attn">2</th><th class="num">0</th><th class="num attn">1</th><th class="num">389,003</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">VizTest.FirstTest</td><td><a href="#m0">checkUrl</a></td><td rowspan="1">1596893934472</td><td rowspan="1">40</td></tr><tr class="passedeven"><td><a href="#m1">clickLoginButton</a></td><td rowspan="1">1596893934518</td><td rowspan="1">5219</td></tr><tr class="passedeven"><td><a href="#m2">clickViz</a></td><td rowspan="1">1596893941141</td><td rowspan="1">296</td></tr><tr class="passedeven"><td><a href="#m3">clientLogin</a></td><td rowspan="1">1596893939738</td><td rowspan="1">1401</td></tr><tr class="passedeven"><td><a href="#m4">editUser</a></td><td rowspan="1">1596893942237</td><td rowspan="1">6098</td></tr><tr class="passedeven"><td><a href="#m5">profileUser</a></td><td rowspan="1">1596893941444</td><td rowspan="1">787</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">firefoxTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">VizTest.loginLogout</td><td><a href="#m0">Login</a></td><td rowspan="1">1597096444205</td><td rowspan="1">28248</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">chromeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">VizTest.loginLogout</td><td><a href="#m1">Login</a></td><td rowspan="1">1597096485757</td><td rowspan="1">15804</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">ieTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">VizTest.loginLogout</td><td><a href="#m2">openBrowser</a></td><td rowspan="1">1597096501573</td><td rowspan="1">309409</td></tr><tr><th colspan="4">ieTest &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">VizTest.loginLogout</td><td><a href="#m3">closeBrowser</a></td><td rowspan="1">1597096810999</td><td rowspan="1">-1597096810999</td></tr><tr><th colspan="4">ieTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">VizTest.loginLogout</td><td><a href="#m4">Login</a></td><td rowspan="1">1597096810992</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">operaTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">VizTest.loginLogout</td><td><a href="#m5">Login</a></td><td rowspan="1">1597096816420</td><td rowspan="1">4017</td></tr></tbody>
+<tbody id="t4"><tr><th colspan="4">edgeTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">VizTest.loginLogout</td><td><a href="#m6">openBrowser</a></td><td rowspan="1">1597096820450</td><td rowspan="1">23</td></tr><tr><th colspan="4">edgeTest &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">VizTest.loginLogout</td><td><a href="#m7">closeBrowser</a></td><td rowspan="1">1597096820501</td><td rowspan="1">-1597096820501</td></tr><tr><th colspan="4">edgeTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">VizTest.loginLogout</td><td><a href="#m8">Login</a></td><td rowspan="1">1597096820482</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">VizTest.FirstTest#checkUrl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">VizTest.FirstTest#clickLoginButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">VizTest.FirstTest#clickViz</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">VizTest.FirstTest#clientLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">VizTest.FirstTest#editUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">VizTest.FirstTest#profileUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>firefoxTest</h2><h3 id="m0">VizTest.loginLogout#Login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>chromeTest</h2><h3 id="m1">VizTest.loginLogout#Login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ieTest</h2><h3 id="m2">VizTest.loginLogout#openBrowser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>ie</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Timed out waiting for page to load.
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DESKTOP-PFPCE4U&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{se:ieOptions={browserAttachTimeout=0.0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.edgepath=, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000.0, nativeEvents=true, ie.edgechromium=false, ie.ensureCleanSession=false, elementScrollBehavior=0.0, ie.browserCommandLineSwitches=, requireWindowFocus=false, initialBrowserUrl=http://localhost:20874/, ignoreProtectedModeSettings=false}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), acceptInsecureCerts=false, browserVersion=11, browserName=internet explorer, javascriptEnabled=true, platformName=windows, setWindowRect=true}]
+Session ID: 95c67e98-7f34-47a1-952d-cdcbc72071fd
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:364)
+	at VizTest.loginLogout.openBrowser(loginLogout.java:61)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">VizTest.loginLogout#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">VizTest.loginLogout#Login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Timed out waiting for page to load.
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DESKTOP-PFPCE4U&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{se:ieOptions={browserAttachTimeout=0.0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.edgepath=, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000.0, nativeEvents=true, ie.edgechromium=false, ie.ensureCleanSession=false, elementScrollBehavior=0.0, ie.browserCommandLineSwitches=, requireWindowFocus=false, initialBrowserUrl=http://localhost:20874/, ignoreProtectedModeSettings=false}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), acceptInsecureCerts=false, browserVersion=11, browserName=internet explorer, javascriptEnabled=true, platformName=windows, setWindowRect=true}]
+Session ID: 95c67e98-7f34-47a1-952d-cdcbc72071fd
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:364)
+	at VizTest.loginLogout.openBrowser(loginLogout.java:61)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>operaTest</h2><h3 id="m5">VizTest.loginLogout#Login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at VizTest.loginLogout.Login(loginLogout.java:110)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>edgeTest</h2><h3 id="m6">VizTest.loginLogout#openBrowser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>edge</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:738)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:33)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:63)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at VizTest.loginLogout.openBrowser(loginLogout.java:58)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">VizTest.loginLogout#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">VizTest.loginLogout#Login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:738)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:33)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:63)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at VizTest.loginLogout.openBrowser(loginLogout.java:58)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

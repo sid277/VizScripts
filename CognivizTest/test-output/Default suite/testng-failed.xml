@@ -7,7 +7,12 @@
         <methods>
           <include name="closeBrowser"/>
           <include name="logoutUser"/>
+          <include name="clickViz"/>
+          <include name="editUser"/>
+          <include name="userProfile"/>
           <include name="openBrowser"/>
+          <include name="checkUrl"/>
+          <include name="clientLogin"/>
         </methods>
       </class> <!-- VizTest.FirstTest -->
     </classes>
