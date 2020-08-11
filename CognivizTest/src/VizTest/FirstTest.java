@@ -4,12 +4,17 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class FirstTest{
@@ -17,17 +22,48 @@ public class FirstTest{
 	//Base url and path to driver are declared before creating functions
 	
 	public String baseUrl = "https://cognitensor.com/";
-	String driverPath = "D:\\\\Installed Apps\\\\Webdrivers\\\\geckodriver-v0.26.0-win64\\\\geckodriver.exe";
 	public WebDriver driver;
 	
 	// This annotation is used to run below mentioned function before running the other functions
 	@BeforeTest
-	 public void openBrowser() {
-		  System.setProperty("webdriver.gecko.driver", driverPath);
-		  driver = new FirefoxDriver();
-		  driver.get(baseUrl);
-		  driver.manage().window().maximize();
+	@Parameters("browser")
+	 public void openBrowser(String browserName) {
+		
+		if(browserName.equalsIgnoreCase("firefox")) {
+			String driverPath = "D:\\Installed Apps\\Webdrivers\\geckodriver-v0.26.0-win64\\geckodriver.exe";
+			System.setProperty("webdriver.gecko.driver", driverPath);
+			driver = new FirefoxDriver();
+		}
+		
+		else if(browserName.equalsIgnoreCase("chrome")) {
+			String driverPath = "D:\\Installed Apps\\Webdrivers\\chromedriver_win32\\chromedriver.exe";
+			System.setProperty("webdriver.chrome.driver", driverPath);
+			driver = new ChromeDriver();
+		}
+		
+		else if(browserName.equalsIgnoreCase("opera")) {
+			String driverPath = "D:\\Installed Apps\\Webdrivers\\operadriver_win64\\operadriver.exe";
+			System.setProperty("webdriver.opera.driver", driverPath);
+			driver = new OperaDriver();
+		}
+
+		else if(browserName.equalsIgnoreCase("IE")) {
+			String driverPath = "D:\\Installed Apps\\Webdrivers\\IEDriverServer_x64_3.150.1\\IEDriverServer.exe";
+			System.setProperty("webdriver.ie.driver", driverPath);
+			driver = new InternetExplorerDriver();
+		}
+
+		else if(browserName.equalsIgnoreCase("edge")) {
+			String driverPath = "D:\\Installed Apps\\Webdrivers\\edgedriver_win64\\msedgedriver.exe";
+			System.setProperty("webdriver.edge.driver", driverPath);
+			driver = new EdgeDriver();
+		}
+		
+		driver.get(baseUrl);
+		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 	  }
+	
 	
 	// Test annotation is used in testNG to declare test functions, 
 	// we can set the priority of the functions in which order they will be executed
@@ -143,7 +179,7 @@ public class FirstTest{
 	
 	@AfterTest
 	public void closeBrowser() {
-		driver.close();
+		//driver.close();
 	}
 	
 }

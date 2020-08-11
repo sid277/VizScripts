@@ -22,7 +22,7 @@ public class loginLogout{
 	
 	public String baseUrl = "https://cognitensor.com/";
 	public WebDriver driver;
-	
+
 	// This annotation is used to run below mentioned function before running the other functions
 	@BeforeTest
 	@Parameters("browser")
@@ -106,12 +106,12 @@ public class loginLogout{
 		*/
 		
 		
-		System.out.println("Clicking Login Button==============");
+		//System.out.println("Clicking Login Button==============");
 		driver.findElement(By.xpath("//*[@id=\"__next\"]/div/div/header/div[2]/div[2]/a[7]")).click();
 		
 		driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/div[1]/div/div[2]/div[1]/div/input")).sendKeys("qatester@cognitensor.com");;
 		driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/div[1]/div/div[2]/div[2]/div/input")).sendKeys("admin12345");
-		driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/div[1]/div/div[2]/div[3]/div/button/span[1]")).click();
+		//driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/div[1]/div/div[2]/div[3]/div/button/span[1]")).click();
 		
 		//String expectedUrl = "https://console.cognitensor.com/landing/main";
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
@@ -163,7 +163,7 @@ public class loginLogout{
 		driver.navigate().refresh();
 		driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
 		
-		String displayed_name = driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/div/span[2]")).getText().toString();
+		//String displayed_name = driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div[2]/div[2]/div[2]/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/div/span[2]")).getText().toString();
 		
 		
 		
